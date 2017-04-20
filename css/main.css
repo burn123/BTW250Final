@@ -8,20 +8,8 @@ h1.title {
 
 
 /* Navigation bar styling */
-
-.slicknav_menu {
+#main-nav {
 	display:none;
-}
-
-@media screen and (max-width: 400px) {
-	/* #menu is the original menu */
-	.js #menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
 }
 
 
