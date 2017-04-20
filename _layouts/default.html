@@ -6,14 +6,18 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/nav.js"></script>
     
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#main-nav').slicknav();
+        });
+    </script>
   </head>
   <body>
     <nav>
-        <ul>
+        <ul id="main-nav">
             <li><a href="">Home</a></li>
             <li><a href="menu">Menu</a></li>
             <li><a href="delivery">Delivery</a></li>
