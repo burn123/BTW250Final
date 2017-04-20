@@ -1,4 +1,20 @@
 /* Styling for Cookie Jar Website */
+
+h1.title {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Sticky Footer Styling */
 * {
   margin: 0;
 }
