@@ -8,14 +8,14 @@ h1.title {
 
 
 /* Navigation bar styling */
-
+/*
 .slicknav_menu {
 	display:none;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 40em) {*/
 	/* #menu is the original menu */
-	.js #menu {
+	/*.js #menu {
 		display:none;
 	}
 	
@@ -23,7 +23,7 @@ h1.title {
 		display:block;
 	}
 }
-
+*/
 
 
 
