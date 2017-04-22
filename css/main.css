@@ -8,11 +8,18 @@ h1.title {
 
 
 /* Navigation bar styling */
-#main-nav {
-	display:none;
+
+@media only screen and (min-width: 768px) {
+    .slicknav_menu {
+        display: none
+    }
 }
 
-
+@media (max-width: 767px) {
+    #main-nav {
+        display: none
+    }
+}
 
 
 
