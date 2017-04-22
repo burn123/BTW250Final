@@ -13,6 +13,10 @@ $illini-blue: #131F33;
 html, body {
     height: 100%;
 }
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 
 h1.title {
@@ -23,6 +27,8 @@ h1.title {
 }
 
 /* Navigation bar styling */
+
+
 #main-nav {
     list-style: none;
     text-align: center;
@@ -83,6 +89,25 @@ h1.title {
 
 
 /* Sticky Footer Styling */
+nav {
+   /* We want the header to have a static height, 
+   it will always take up just as much space as it needs.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 0 0 auto;
+}
+.content{
+   /* By setting flex-grow to 1, the main content will take up 
+   all of the remaining space on the page. 
+   The other elements have flex-grow: 0 and won't contest the free space. */
+   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 1 0 auto;
+}
+
+footer {
+   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+   flex: 0 0 auto;
+}
 /*.container {
     min-height: 100%;
     margin-bottom: -($footer-height + $nav-height);
