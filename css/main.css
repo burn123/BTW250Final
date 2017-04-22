@@ -25,10 +25,17 @@ h1.title {
 }
 #main-nav li {
     display: inline-block;
-    width: 33%;
+    width: 25%;
+    color: #131F33;
+    background-color: #FA6300;
 }
 #main-nav a {
+    display: block;
+    padding: 20px 0;
     text-decoration: none;
+}
+#main-nav a, #main-nav a:visited, #main-nav a:hover, #main-nav a:active {
+    color: inherit;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,8 +56,8 @@ h1.title {
 /* Sticky Footer Styling */
 .container {
     min-height: 100%;
-    /* equal to footer height */
-    margin-bottom: -189px; 
+    /* equal to negative footer height plus positive nav height*/
+    margin-bottom: -93px; 
 }
 .container:after {
     content: "";
