@@ -1,5 +1,15 @@
 /* Styling for Cookie Jar Website */
 
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+
+
 h1.title {
     text-align: center;
     color: orange;
@@ -10,11 +20,15 @@ h1.title {
 
 /* Navigation bar styling */
 #main-nav {
-    text-decoration: none;
     list-style: none;
+    text-align: center;
+}
+#main-nav li {
     display: inline-block;
     width: 33%;
-    text-align: center;
+}
+#main-nav a {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -33,12 +47,6 @@ h1.title {
 
 
 /* Sticky Footer Styling */
-* {
-    margin: 0;
-}
-html, body {
-    height: 100%;
-}
 .container {
     min-height: 100%;
     /* equal to footer height */
