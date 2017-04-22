@@ -3,10 +3,11 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sass         = require('gulp-sass'),
     concat       = require('gulp-concat'),
+    cleanCSS     = require('gulp-clean-css');
     uglify       = require('gulp-uglify'),
     rename       = require('gulp-rename');
 
-var css_input = ['./css/*.css', './css/*.scss'],
+var css_input = ['css/*.css', 'css/*.scss'],
     js_input = 'js/*.js';
 
 gulp.task('autoprefixer', function () {
@@ -14,7 +15,9 @@ gulp.task('autoprefixer', function () {
         // Error log to keep session going when scss contains error
         .pipe(sass().on('error', sass.logError)) 
         .pipe(autoprefixer('last 2 version'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(concat('all.min.css'))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('dist'));
 });
 
 // Concatenate & Minify JS
@@ -27,7 +30,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['autoprefixer', scripts], function() {
+gulp.task('default', ['autoprefixer', 'scripts'], function() {
         gulp.watch(css_input, ['autoprefixer']);
         gulp.watch(js_input, ['scripts']);
 });
