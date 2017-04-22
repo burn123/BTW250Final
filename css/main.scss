@@ -72,8 +72,7 @@ h1.title {
 .content {
     div {
         padding: 10px 20px;
-        width: 100%;
-        /* Center the screen horizontally */
+        /* Center the content horizontally */
         margin: 0 auto;
         @media only screen and (min-width: 768px) {
             width:75%;
@@ -84,7 +83,7 @@ h1.title {
 
 
 /* Sticky Footer Styling */
-.container {
+/*.container {
     min-height: 100%;
     margin-bottom: -($footer-height + $nav-height);
     &:after {
@@ -94,7 +93,7 @@ h1.title {
 }
 footer, .container:after {
     height: $footer-height; 
-}
+}*/
 footer {
     padding: 10px;
     background: $illini-orange;
