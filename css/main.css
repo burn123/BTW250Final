@@ -26,6 +26,10 @@ h1.title {
 #main-nav li {
     display: inline-block;
     width: 25%;
+    background-color: #131F33;
+    color: #FA6300;
+}
+#main-nav li:hover {
     color: #131F33;
     background-color: #FA6300;
 }
