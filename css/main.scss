@@ -73,7 +73,7 @@ h1.title {
 /* Sticky Footer Styling */
 .container {
     min-height: 100%;
-    margin-bottom: -$footer-height + $nav-height;
+    margin-bottom: -($footer-height + $nav-height);
     &:after {
         content: "";
         display: block;
