@@ -1,6 +1,7 @@
 /* Styling for Cookie Jar Website */
 $footer-height: 142px;
 $nav-height: 49px;
+$nav_link_num: 4;
 $illini-orange: #FA6300;
 $illini-blue: #131F33;
 
@@ -16,13 +17,10 @@ html, body {
 
 h1.title {
     text-align: center;
-    color: orange;
+    color: $illini-orange;
     font: 32px Verdana, Geneva, sans-serif;
     padding:20px;
 }
-
-
-
 
 /* Navigation bar styling */
 #main-nav {
@@ -35,7 +33,7 @@ h1.title {
 
     li {
         display: inline-block;
-        width: 25%;
+        width: percentage(1/$nav_link_num);
         background-color: $illini-blue;
         color: $illini-orange;
         transition:.5s;
