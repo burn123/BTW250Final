@@ -17,6 +17,8 @@ html, body {
 h1.title {
     text-align: center;
     color: orange;
+    font: 32px Verdana, Geneva, sans-serif;
+    padding:20px;
 }
 
 
@@ -45,7 +47,7 @@ h1.title {
             display: block;
             padding: 20px 0;
             text-decoration: none;
-            font: 15px arial, sans-serif;
+            font: 20px arial, sans-serif;
             font-weight: bold;
 
             transition:.5s;
@@ -85,5 +87,6 @@ footer, .container:after {
     height: $footer-height; 
 }
 footer {
+    padding: 10px;
     background: $illini-orange;
 }
