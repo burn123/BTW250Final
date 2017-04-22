@@ -28,6 +28,7 @@ h1.title {
         width: 25%;
         background-color: #131F33;
         color: #FA6300;
+        transition:.5s;
         &:hover {
             color: #131F33;
             background-color: #FA6300;
@@ -65,7 +66,7 @@ h1.title {
 .container {
     min-height: 100%;
     /* equal to negative footer height plus positive nav height*/
-    margin-bottom: -93px;
+    margin-bottom: -$footer-height;
     &:after {
         content: "";
         display: block;

@@ -4,13 +4,16 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     sass         = require('gulp-sass');
 
-gulp.task('default', ['autoprefixer']);
-
-
+var input = ['./css/*.css', './css/*.scss'];
 
 gulp.task('autoprefixer', function () {
-    return gulp.src(['./css/*.css', './css/*.scss'])
-        .pipe(sass().on('error', sass.logError)) //error log to keep session going when scss contains error
+    gulp.src(input)
+        // Error log to keep session going when scss contains error
+        .pipe(sass().on('error', sass.logError)) 
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('default', ['autoprefixer'], function() {
+        gulp.watch(input, ['autoprefixer']);
 });

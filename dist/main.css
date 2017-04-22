@@ -19,7 +19,8 @@ h1.title {
     display: inline-block;
     width: 25%;
     background-color: #131F33;
-    color: #FA6300; }
+    color: #FA6300;
+    transition: .5s; }
     #main-nav li:hover {
       color: #131F33;
       background-color: #FA6300; }
@@ -43,7 +44,7 @@ h1.title {
 .container {
   min-height: 100%;
   /* equal to negative footer height plus positive nav height*/
-  margin-bottom: -93px; }
+  margin-bottom: -142px; }
   .container:after {
     content: "";
     display: block; }
