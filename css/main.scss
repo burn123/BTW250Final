@@ -95,7 +95,7 @@ nav {
    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
    flex: 0 0 auto;
 }
-.content{
+.container {
    /* By setting flex-grow to 1, the main content will take up 
    all of the remaining space on the page. 
    The other elements have flex-grow: 0 and won't contest the free space. */

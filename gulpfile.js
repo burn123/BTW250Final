@@ -15,7 +15,11 @@ gulp.task('autoprefixer', function () {
         // Error log to keep session going when scss contains error
         .pipe(sass().on('error', sass.logError)) 
         .pipe(autoprefixer('last 2 version'))
-        .pipe(concat('all.min.css'))
+        // Create unminified version
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest('dist'))
+
+        .pipe(rename('all.min.css'))
         .pipe(cleanCSS())
         .pipe(gulp.dest('dist'));
 });
