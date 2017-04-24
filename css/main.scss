@@ -1,6 +1,4 @@
 /* Styling for Cookie Jar Website */
-$footer-height: 142px;
-$nav-height: 49px;
 $nav_link_num: 4;
 $illini-orange: #FA6300;
 $illini-blue: #131F33;
@@ -18,17 +16,18 @@ body {
     flex-direction: column;
 }
 
-
-h1.title {
+h2 {
+    font: 28px Verdana, Geneva, sans-serif;
     text-align: center;
     color: $illini-orange;
-    font: 32px Verdana, Geneva, sans-serif;
     padding:20px;
+}
+h1.title {
+    @extend h2;
+    font: 32px Verdana, Geneva, sans-serif;
 }
 
 /* Navigation bar styling */
-
-
 #main-nav {
     list-style: none;
     text-align: center;
@@ -90,36 +89,13 @@ h1.title {
 
 /* Sticky Footer Styling */
 nav {
-   /* We want the header to have a static height, 
-   it will always take up just as much space as it needs.  */
-   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
    flex: 0 0 auto;
 }
 .container {
-   /* By setting flex-grow to 1, the main content will take up 
-   all of the remaining space on the page. 
-   The other elements have flex-grow: 0 and won't contest the free space. */
-   /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
    flex: 1 0 auto;
 }
-
 footer {
-   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
-   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-   flex: 0 0 auto;
-}
-/*.container {
-    min-height: 100%;
-    margin-bottom: -($footer-height + $nav-height);
-    &:after {
-        content: "";
-        display: block;
-    }
-}
-footer, .container:after {
-    height: $footer-height; 
-}*/
-footer {
+    flex: 0 0 auto;
     padding: 10px;
     background: $illini-orange;
 }
