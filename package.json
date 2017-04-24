@@ -13,6 +13,7 @@
     "gulp-postcss": "^6.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sassbeautify": "^0.1.0",
     "gulp-uglify": "^2.1.2"
   },
   "scripts": {

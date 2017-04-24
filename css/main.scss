@@ -31,39 +31,43 @@ img.title_img {
     display:block;
     margin: 0 auto;
     width: 100%;
-    max-width:1200px;
+    max-width:1000px;
 }
 
 /* Navigation bar styling */
-#main-nav {
-    list-style: none;
-    text-align: center;
+nav {
+    flex: 0 0 auto;
 
-    @media (max-width: 767px) {
-        display: none;
-    }
+    #main-nav {
+        list-style: none;
+        text-align: center;
 
-    li {
-        display: inline-block;
-        width: percentage(1/$nav_link_num);
-        background-color: $illini-blue;
-        color: $illini-orange;
-        transition:.5s;
-        &:hover {
-            background-color: $illini-orange;
-            color: $illini-blue;
+        @media (max-width: 767px) {
+            display: none;
         }
-        a {
-            display: block;
-            padding: 20px 0;
-            text-decoration: none;
-            font: 20px arial, sans-serif;
-            font-weight: bold;
 
+        li {
+            display: inline-block;
+            width: percentage(1/$nav_link_num);
+            background-color: $illini-blue;
+            color: $illini-orange;
             transition:.5s;
+            &:hover {
+                background-color: $illini-orange;
+                color: $illini-blue;
+            }
+            a {
+                display: block;
+                padding: 20px 0;
+                text-decoration: none;
+                font: 20px arial, sans-serif;
+                font-weight: bold;
 
-            &, &:visited, &:hover, &:active {
-                color: inherit;
+                transition:.5s;
+
+                &, &:visited, &:hover, &:active {
+                    color: inherit;
+                }
             }
         }
     }
@@ -92,12 +96,6 @@ img.title_img {
     }
 }
 
-
-
-/* Sticky Footer Styling */
-nav {
-   flex: 0 0 auto;
-}
 .container {
    flex: 1 0 auto;
 }
@@ -105,4 +103,5 @@ footer {
     flex: 0 0 auto;
     padding: 10px;
     background: $illini-orange;
+    text-align: center
 }
