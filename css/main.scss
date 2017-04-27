@@ -74,6 +74,8 @@ nav {
 }
 .slicknav_menu {
     background-color: $illini-blue;
+    font: 14px arial, sans-serif;
+    font-weight: bold;
 
     @media (min-width: 768px) {
         display: none;
@@ -81,10 +83,15 @@ nav {
 
     a {
         color: $illini-orange;
+        transition:.5s;
         &:hover {
             background-color: $illini-orange;
             color: $illini-blue;
         }
+    }
+
+    .slicknav_btn {
+        background-color:inherit;
     }
 }
 
