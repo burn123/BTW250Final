@@ -73,10 +73,18 @@ nav {
     }
 }
 .slicknav_menu {
-    background-color:illini-blue;
+    background-color: $illini-blue;
 
     @media (min-width: 768px) {
         display: none;
+    }
+
+    a {
+        color: $illini-orange;
+        &:hover {
+            background-color: $illini-orange;
+            color: $illini-blue;
+        }
     }
 }
 
