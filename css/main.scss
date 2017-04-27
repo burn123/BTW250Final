@@ -72,9 +72,10 @@ nav {
         }
     }
 }
+.slicknav_menu {
+    background-color:illini-blue;
 
-@media (min-width: 768px) {
-    .slicknav_menu {
+    @media (min-width: 768px) {
         display: none;
     }
 }
