@@ -1,7 +1,8 @@
 /* Styling for Cookie Jar Website */
 $nav_link_num: 4;
-$illini-orange: #FA6300;
-$illini-blue: #131F33;
+$transition_time: .3s;
+$illini_orange: #FA6300;
+$illini_blue: #131F33;
 
 /* Basic Reset */
 * {
@@ -19,7 +20,7 @@ body {
 h2 {
     font: 28px Verdana, Geneva, sans-serif;
     text-align: center;
-    color: $illini-orange;
+    color: $illini_orange;
     padding:20px;
 }
 h1.title {
@@ -49,12 +50,12 @@ nav {
         li {
             display: inline-block;
             width: percentage(1/$nav_link_num);
-            background-color: $illini-blue;
-            color: $illini-orange;
+            background-color: $illini_blue;
+            color: $illini_orange;
             transition:.5s;
             &:hover {
-                background-color: $illini-orange;
-                color: $illini-blue;
+                background-color: $illini_orange;
+                color: $illini_blue;
             }
             a {
                 display: block;
@@ -63,7 +64,7 @@ nav {
                 font: 20px arial, sans-serif;
                 font-weight: bold;
 
-                transition:.5s;
+                transition: $transition_time;
 
                 &, &:visited, &:hover, &:active {
                     color: inherit;
@@ -73,8 +74,8 @@ nav {
     }
 }
 .slicknav_menu {
-    background-color: $illini-blue;
-    font: 14px arial, sans-serif;
+    background-color: $illini_blue;
+    font: 16px arial, sans-serif;
     font-weight: bold;
 
     @media (min-width: 768px) {
@@ -82,11 +83,11 @@ nav {
     }
 
     a {
-        color: $illini-orange;
-        transition:.5s;
+        color: $illini_orange;
+        transition: $transition_time;
         &:hover {
-            background-color: $illini-orange;
-            color: $illini-blue;
+            background-color: $illini_orange;
+            color: $illini_blue;
         }
     }
 
@@ -118,6 +119,6 @@ nav {
 footer {
     flex: 0 0 auto;
     padding: 10px;
-    background: $illini-orange;
+    background: $illini_orange;
     text-align: center
 }
