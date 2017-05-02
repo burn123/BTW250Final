@@ -4,6 +4,13 @@ $transition_time: .3s;
 $illini_orange: #FA6300;
 $illini_blue: #131F33;
 
+$browser-context: 16; // Default
+
+/* Converts pixels to em */
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -18,14 +25,14 @@ body {
 }
 
 h2 {
-    font: 28px Verdana, Geneva, sans-serif;
+    font: em(28) Verdana, Geneva, sans-serif;
     text-align: center;
     color: $illini_orange;
     padding:20px;
 }
 h1.title {
     @extend h2;
-    font: 32px Verdana, Geneva, sans-serif;
+    font: em(32) Verdana, Geneva, sans-serif;
 }
 
 img.title_img {
@@ -38,7 +45,10 @@ img.title_img {
 img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+p {
+    margin: 10px 0;
 }
 
 /* Navigation bar styling */
@@ -67,7 +77,7 @@ nav {
                 display: block;
                 padding: 20px 0;
                 text-decoration: none;
-                font: 20px arial, sans-serif;
+                font: em(20) arial, sans-serif;
                 font-weight: bold;
 
                 transition: $transition_time;
@@ -81,7 +91,7 @@ nav {
 }
 .slicknav_menu {
     background-color: $illini_blue;
-    font: 16px arial, sans-serif;
+    font: em(16) arial, sans-serif;
     font-weight: bold;
 
     @media all and (min-width: 768px) {

@@ -139,6 +139,7 @@
   height: 44px; }
 
 /* Styling for Cookie Jar Website */
+/* Converts pixels to em */
 /* Basic Reset */
 * {
   margin: 0;
@@ -154,13 +155,13 @@ body {
       flex-direction: column; }
 
 h2, h1.title {
-  font: 28px Verdana, Geneva, sans-serif;
+  font: 1.75em Verdana, Geneva, sans-serif;
   text-align: center;
   color: #FA6300;
   padding: 20px; }
 
 h1.title {
-  font: 32px Verdana, Geneva, sans-serif; }
+  font: 2em Verdana, Geneva, sans-serif; }
 
 img.title_img {
   display: block;
@@ -171,7 +172,10 @@ img.title_img {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 auto; }
+  margin: 10px auto; }
+
+p {
+  margin: 10px 0; }
 
 /* Navigation bar styling */
 nav {
@@ -196,7 +200,7 @@ nav {
         display: block;
         padding: 20px 0;
         text-decoration: none;
-        font: 20px arial, sans-serif;
+        font: 1.25em arial, sans-serif;
         font-weight: bold;
         transition: 0.3s; }
         nav #main-nav li a, nav #main-nav li a:visited, nav #main-nav li a:hover, nav #main-nav li a:active {
@@ -204,7 +208,7 @@ nav {
 
 .slicknav_menu {
   background-color: #131F33;
-  font: 16px arial, sans-serif;
+  font: 1em arial, sans-serif;
   font-weight: bold; }
   @media all and (min-width: 768px) {
     .slicknav_menu {
