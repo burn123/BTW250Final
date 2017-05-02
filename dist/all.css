@@ -169,7 +169,8 @@ img.title_img {
   max-width: 1000px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
 
 /* Navigation bar styling */
 nav {
