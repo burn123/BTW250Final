@@ -169,6 +169,7 @@ img.title_img {
   max-width: 1000px; }
 
 img {
+  display: block;
   max-width: 100%;
   margin: 0 auto; }
 
