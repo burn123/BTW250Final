@@ -144,7 +144,7 @@ blockquote {
     display:inline-block;
 
     @media only screen and (max-width: 649px) {
-        padding: 15px; 
+        padding: 15px;
     }
     @media only screen and (min-width: 650px) {
         &:before, &:after {
@@ -178,5 +178,5 @@ footer {
     flex: 0 0 auto;
     padding: 10px;
     background: $illini_orange;
-    text-align: center
+    text-align: center;
 }
