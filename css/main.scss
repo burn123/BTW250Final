@@ -137,13 +137,14 @@ blockquote {
     position: relative;
     padding: 30px 120px;
     text-align: center;
-    font-size: 30px;
+    font-size: em(30);
+    max-width: 750px
 
     &:before, &:after {
         position: absolute;
         width: 60px;
         height: 60px;
-        font-size: 120px;
+        font-size: em(120);
         line-height: 1;
         top: 0;
     }
