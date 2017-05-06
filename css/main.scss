@@ -119,7 +119,7 @@ nav {
 }
 
 .content {
-    div:not(.camera_wrap) {
+    div:not(.camera_wrap), div:not(.camera_wrap) > * {
         padding: 10px 20px;
         /* Center the content horizontally */
         margin: 0 auto;
