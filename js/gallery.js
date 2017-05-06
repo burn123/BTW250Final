@@ -1,3 +1,4 @@
 $(document).ready(function () {
-    $('.camera_wrap').camera();
+    if($('.camera_wrap').length)
+        $('.camera_wrap').camera();
 });
