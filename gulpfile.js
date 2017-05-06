@@ -16,8 +16,8 @@ gulp.task('autoprefixer', function () {
         .pipe(sass().on('error', sass.logError)) 
         .pipe(autoprefixer('last 2 version'))
         // Create unminified version
-        .pipe(concat('all.css'))
-        .pipe(gulp.dest('dist'))
+        // .pipe(concat('all.css'))
+        // .pipe(gulp.dest('dist'))
 
         .pipe(rename('all.min.css'))
         .pipe(cleanCSS())
