@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $('camera_gallery').camera();
+    $('.camera_gallery').camera();
 });
