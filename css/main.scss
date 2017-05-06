@@ -135,8 +135,12 @@ nav {
 }
 
 blockquote {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    
     position: relative;
-    marign: 0;
     padding: 30px 120px;
     text-align: center;
     font-size: 30px;
@@ -148,21 +152,15 @@ blockquote {
         font-size: 120px;
         line-height: 1;
         top: 0;
-        left: 0;
     }
     &:before {
+        left: 0;
         content: "\201C";
     }
     &:after {
+        right: 0;
         content: "\201D";
     }
-}
-blockquote:before {
-}
-blockquote:after {
-    top: 0;
-    right: 0;
-    content: "\201D";
 }
 
 
