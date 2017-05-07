@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-    <base href="https://burn123.github.io/BTW250Final/" />
+    <head>
+        <title>{{ page.title }}</title>
+        <base href="https://burn123.github.io/BTW250Final/" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="dist/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="dist/all.min.js"></script>
-  </head>
-  <body>
-    <nav>
-        <ul id="main-nav">
-            <li><a href="">Home</a></li><!--
-            --><li><a href="menu">Menu</a></li><!--
-            --><li><a href="delivery">Delivery</a></li><!--
-            --><li><a href="contact">Contact</a></li>
-        </ul>
-    </nav>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans"> 
+        <link rel="stylesheet" type="text/css" href="dist/all.min.css">
 
-    <div class="container">
-        <img class="title_img" src="img/title_img.jpg" />
-        <h1 class="title">{{ page.header_text }}</h1>
-        <div class="content">
-            {{ content }}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="dist/all.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="">Home</a></li><!--
+                --><li><a href="menu">Menu</a></li><!--
+                --><li><a href="delivery">Delivery</a></li><!--
+                --><li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <img class="title_img" src="img/title_img.jpg" />
+            <h1 class="title">{{ page.header_text }}</h1>
+            <div class="content">
+                {{ content }}
+            </div>
         </div>
-    </div>
 
-    <footer>
-        <div>The Cookie Jar - 712 South Sixth St. - Champaign, IL 61820 - Ph. 217-384-5246</div>
-        <div>Created by BTW Consulting</div>
-    </footer>
+        <footer>
+            <div>The Cookie Jar - 712 South Sixth St. - Champaign, IL 61820 - Ph. 217-384-5246</div>
+            <div>Created by BTW Consulting</div>
+        </footer>
   </body>
 </html>

@@ -22,18 +22,18 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-size: 1em;
+    font: 1em 'Open Sans', sans-serif;
 }
 
 h2 {
-    font: em(28) Verdana, Geneva, sans-serif;
+    font: em(28) 'Josefin Sans', sans-serif;
     text-align: center;
     color: $illini_orange;
     padding:20px;
 }
 h1.title {
     @extend h2;
-    font: em(32) Verdana, Geneva, sans-serif;
+    font-size: em(32);
 }
 
 img.title_img {
